@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Categories = () => {
+const Displaybooks = () => {
     return (
         <div>
             <h1>Are we making progress</h1>
@@ -8,4 +8,4 @@ const Categories = () => {
     )
 }
 
-export  default Categories;
+export  default Displaybooks;
