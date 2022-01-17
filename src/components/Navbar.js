@@ -7,7 +7,7 @@ const Navbar = () => {
     display: 'flex',
     flexDirection: 'row',
     justifyContent: 'space-between',
-    width: '13vw',
+    width: '20vw',
     paddingRight: '2rem',
     marginRight: '2rem',
     paddingTop: '0.5rem',
@@ -52,4 +52,5 @@ const Navbar = () => {
     </nav>
   );
 };
+
 export default Navbar;

@@ -1,6 +1,7 @@
 import { Route, Routes } from 'react-router-dom';
 import Navbar from './Navbar';
-import Displaybooks from './Displaybooks';
+import Books from '../redux/books/Books';
+import Categories from '../redux/categories/Categories';
 
 function App() {
   const fonty = {
@@ -15,14 +16,14 @@ function App() {
           path="/"
           element={(
             <div className="letty" style={fonty}>
-              < Displaybooks />
+              < Books />
             </div>
     )}
         />
         <Route
           path="/Categories"
           element={
-            < Displaybooks />
+            < Categories />
     }
         />
       </Routes>
