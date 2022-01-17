@@ -1,7 +1,7 @@
 import { Route, Routes } from 'react-router-dom';
 import Navbar from './Navbar';
-import Books from '../redux/books/books';
-import Categories from '../redux/categories/categories';
+import Books from '../redux/books/Books';
+import Categories from '../redux/categories/Categories';
 
 function App() {
   const fonty = {
