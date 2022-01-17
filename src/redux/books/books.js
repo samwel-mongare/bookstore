@@ -1,17 +1,10 @@
-import Buttons from '../../components/Buttons';
+import Bookinfo from './Bookinfo';
+import Bookinput from './Bookinput';
 
 const Books = () => (
   <div className="booksContainer">
-    <ul>
-      <li style={{ display: 'flex' }}>
-        <p style={{ margin: '0' }}>No books to display!</p>
-        <Buttons label="Remove" />
-      </li>
-    </ul>
-    <form>
-      <input type="text" placeholder="Enter book name" />
-      <Buttons label="Add" />
-    </form>
+    <Bookinfo />
+    <Bookinput />
   </div>
 );
 
