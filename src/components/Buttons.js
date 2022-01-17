@@ -1,10 +1,9 @@
-
 const Buttons = (props) => {
-    return (
-     <button className="button" onClick={props.handleClick} >
-     {props.label}
-   </button>
-    )
-}
-
+  const labely = props;
+  return (
+    <button className="button" type="button">
+      {labely.label}
+    </button>
+  );
+};
 export default Buttons;

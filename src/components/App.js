@@ -16,14 +16,14 @@ function App() {
           path="/"
           element={(
             <div className="letty" style={fonty}>
-              < Books />
+              <Books />
             </div>
     )}
         />
         <Route
           path="/Categories"
           element={
-            < Categories />
+            <Categories />
     }
         />
       </Routes>
