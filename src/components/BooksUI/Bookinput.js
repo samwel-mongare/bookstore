@@ -1,4 +1,4 @@
-import Buttons from '../../components/Buttons';
+import Buttons from './Buttons';
 
 const Bookinput = () => (
   <form>
