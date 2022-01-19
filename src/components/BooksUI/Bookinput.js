@@ -21,7 +21,6 @@ const Bookinput = (() => {
 
   const submitBookToStore = (e) => {
     e.preventDefault();
-    console.log('dispatching');
     dispatch(bookAdded(newBook));
     createNewBook({
       title: '',
