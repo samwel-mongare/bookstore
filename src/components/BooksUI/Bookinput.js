@@ -1,7 +1,7 @@
 import { v4 as uuidv4 } from 'uuid';
 import { useDispatch } from 'react-redux';
 import { useState } from 'react';
-import { bookAdded } from '../../redux/books/books';
+import { sendBookToApi } from '../../redux/books/api';
 
 const Bookinput = (() => {
   const [newTitle, createNewTitle] = useState({
@@ -34,7 +34,7 @@ const Bookinput = (() => {
 
   const submitBookToStore = (e) => {
     e.preventDefault();
-    dispatch(bookAdded(newBook));
+    dispatch(sendBookToApi(newBook));
     createNewCategory({ category: '' });
     createNewTitle({ title: '' });
   };

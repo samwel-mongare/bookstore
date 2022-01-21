@@ -3,7 +3,6 @@ import Bookinfo from './Bookinfo';
 
 const Booklist = (() => {
   const state = useSelector((state) => state.booksReducer);
-
   return (
     <ul className="Booklist">
       {state.map((data) => (
