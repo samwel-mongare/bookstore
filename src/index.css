@@ -1,8 +1,306 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+@import url("https://fonts.googleapis.com/css?family=Roboto Slab'");
+
 body {
-  margin: 0;
   padding: 0;
+  margin: 0;
+  background-color: #d3d3d3;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.bookStore {
+  width: 90vw;
+  height: 90vh;
+  margin: 3vh 5vw;
+  border-radius: 4px;
+  box-shadow: 0 0 60px 0 rgba(0, 0, 0, 0.05);
+  background-color: whitesmoke;
 }
 
 .active {
-  color: red;
+  color: black;
+  font-weight: 700;
+}
+
+.navBar {
+  display: flex;
+  flex-direction: row;
+  padding-left: 5rem;
+}
+
+.links {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 1rem;
+  width: 15vw;
+}
+
+.book-container {
+  display: flex;
+  flex-direction: row;
+  width: 60vw;
+  height: 15vh;
+  margin: 1.313rem 3.25rem 0;
+  padding: 0.8rem 9.188rem 1.625rem 1.688rem;
+  padding-bottom: 2rem;
+  border-radius: 4px;
+  border: solid 1px var(--white-two);
+  background-color: white;
+}
+
+.inputForm {
+  width: 70vw;
+  height: 2.813rem;
+  margin: 1.313rem 4.85rem 0;
+  padding: 0 9.188rem 1.625rem 1.688rem;
+  padding-bottom: 2rem;
+  border-radius: 4px;
+  border: solid 1px var(--white-two);
+  background-color: whitesmoke;
+}
+
+.Title {
+  width: 10.875rem;
+  height: 1.5rem;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.25rem;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -0.18px;
+  color: #888;
+}
+
+.Lesson-Pane2 {
+  width: 15.813rem;
+  height: 2.813rem;
+  border-radius: 4px;
+  border: solid 1px var(--white-two);
+  background-color: #fff;
+  margin-right: 1rem;
+  padding-left: 0.5rem;
+}
+
+.shadow {
+  width: 85.063rem;
+  height: 63.313rem;
+  opacity: 0.2;
+  border-radius: 4px;
+  -webkit-filter: blur(50px);
+  filter: blur(50px);
+  background-color: var(--black);
+}
+
+.titling {
+  width: 30rem;
+}
+
+.submit {
+  width: 11.5rem;
+  height: 2.813rem;
+  border-radius: 3px;
+  background-color: #0290ff;
+  color: white;
+}
+
+.remove {
+  width: 3.375rem;
+  height: 1.188rem;
+  font-family: 'RobotoSlab', sans-serif;
+  font-size: 0.875rem;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #4386bf;
+  border: none;
+  cursor: pointer;
+  border-right: solid 1px #121212;
+  background-color: white;
+}
+
+.comment {
+  margin-left: 0;
+  width: 4.5rem;
+}
+
+.edit {
+  width: 2.3rem;
+}
+
+.author {
+  width: 6.688rem;
+  height: 1.188rem;
+  margin: 0.25rem 0 0;
+  font-family: 'RobotoSlab', sans-serif;
+  font-size: 0.875rem;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #4386bf;
+}
+
+.cat {
+  width: auto;
+  height: 1.125rem;
+  margin: 0 2.438rem 0 0;
+  opacity: 0.5;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.875rem;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: var(--black-two);
+}
+
+.titleData {
+  width: 12.313rem;
+  height: 1.813rem;
+  margin: 0.188rem 20.188rem 0 0;
+  font-family: 'RobotoSlab', sans-serif;
+  font-size: 1.375rem;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -0.2px;
+  color: var(--black-two);
+}
+
+.header {
+  width: 15rem;
+  height: 2.313rem;
+  margin: 0.375rem 2.938rem 0.125rem 0;
+  padding-top: 1rem;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.875rem;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #0290ff;
+  white-space: nowrap;
+}
+
+.Booklist {
+  width: 99%;
+  height: 20rem;
+  overflow: scroll;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.user {
+  color: #0290ff;
+  font-size: 1.5rem;
+  padding-bottom: 1rem;
+}
+
+.holder {
+  width: 30rem;
+  height: 1rem;
+  text-align: end;
+  margin-top: 2rem;
+}
+
+.progressAnalysis {
+  display: flex;
+  gap: 20px;
+}
+
+.progress-bar {
+  height: 70px;
+  width: 70px;
+}
+
+.progressPercentV {
+  display: flex;
+  flex-direction: column;
+  margin-top: 5px;
+}
+
+.progressPercent {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 30px;
+  margin: 0;
+  color: #121212;
+  font-weight: 500;
+}
+
+.completedStatus {
+  margin: 0;
+  margin-top: 5px;
+  font-family: 'Montserrat', sans-serif;
+  color: #121212;
+  opacity: 0.5;
+  font-size: 15px;
+}
+
+.updateOne {
+  display: flex;
+  flex-direction: column;
+  margin-left: 4rem;
+}
+
+.heading2 {
+  color: #121212;
+  opacity: 0.5;
+  font-family: 'RobotoSlab', sans-serif;
+  margin: 0;
+  font-size: 15px;
+  font-weight: 300;
+}
+
+.heading3 {
+  color: #121212;
+  font-family: 'RobotoSlab', sans-serif;
+  margin: 0;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  font-weight: 300;
+  font-size: 15px;
+}
+
+.updatedProgress {
+  width: 11rem;
+  background-color: #0290ff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  padding: 10px;
+  white-space: nowrap;
+}
+
+.extra-prop {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 30rem;
+  padding-top: 1rem;
+}
+
+.circle {
+  width: 2.813rem;
+  height: 2.813rem;
+  margin: 0 0 0 41.5rem;
+  padding: 0.875rem;
+  border: solid 1px var(--white-two);
 }

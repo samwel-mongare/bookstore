@@ -1,29 +1,7 @@
 import { NavLink } from 'react-router-dom';
+import { FaUserCircle } from 'react-icons/fa';
 
 const Navbar = () => {
-  const lists = {
-    textDecoration: 'none',
-    listStyleType: 'none',
-    display: 'flex',
-    flexDirection: 'row',
-    justifyContent: 'space-between',
-    width: '20vw',
-    paddingRight: '2rem',
-    marginRight: '2rem',
-    paddingTop: '0.5rem',
-  };
-
-  const navContainer = {
-    display: 'flex',
-    flexDirection: 'row',
-    justifyContent: 'flex-start',
-    width: '100vw',
-    height: '10vh',
-    paddingTop: '0.8vh',
-    paddingLeft: '2vw',
-    backgroundColor: 'whitesmoke',
-  };
-
   const links = [
     {
       id: 1,
@@ -38,9 +16,9 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className="navBar" style={navContainer}>
-      <h1>BOOKSTORE CMS</h1>
-      <ul style={lists}>
+    <nav className="navBar">
+      <h1 className="header">Bookstore CMS</h1>
+      <ul className="links">
         {links.map((link) => (
           <li key={link.id}>
             <NavLink to={link.path}>
@@ -49,6 +27,9 @@ const Navbar = () => {
           </li>
         ))}
       </ul>
+      <div className="holder">
+        <FaUserCircle className="user" />
+      </div>
     </nav>
   );
 };
