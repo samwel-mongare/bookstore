@@ -44,6 +44,8 @@ a {
 }
 
 .book-container {
+  display: flex;
+  flex-direction: row;
   width: 60vw;
   height: 13vh;
   margin: 1.313rem 3.25rem 0;
@@ -122,6 +124,14 @@ a {
   letter-spacing: normal;
   color: #4386bf;
   border: none;
+  cursor: pointer;
+  border-right: 1px black solid;
+  background-color: white;
+}
+
+.comment {
+  margin-left: 0;
+  width: 4.5rem;
 }
 
 .author {
@@ -204,4 +214,80 @@ a {
   height: 1rem;
   text-align: end;
   margin-top: 2rem;
+}
+
+.progressAnalysis {
+  display: flex;
+  gap: 20px;
+}
+
+.progress-bar {
+  height: 70px;
+  width: 70px;
+}
+
+.progressPercentV {
+  display: flex;
+  flex-direction: column;
+  margin-top: 5px;
+}
+
+.progressPercent {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 30px;
+  margin: 0;
+  color: #121212;
+  font-weight: 500;
+}
+
+.completedStatus {
+  margin: 0;
+  margin-top: 5px;
+  font-family: 'Montserrat', sans-serif;
+  color: #121212;
+  opacity: 0.5;
+  font-size: 15px;
+}
+
+.updateOne {
+  display: flex;
+  flex-direction: column;
+}
+
+.heading2 {
+  color: #121212;
+  opacity: 0.5;
+  font-family: 'RobotoSlab', sans-serif;
+  margin: 0;
+  font-size: 15px;
+  font-weight: 300;
+}
+
+.heading3 {
+  color: #121212;
+  font-family: 'RobotoSlab', sans-serif;
+  margin: 0;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  font-weight: 300;
+  font-size: 15px;
+}
+
+.updatedProgress {
+  width: 150px;
+  background-color: #0290ff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  padding: 10px;
+  white-space: nowrap;
+}
+
+.extra-prop {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 30rem;
+  padding-top: 1rem;
 }
