@@ -5,7 +5,6 @@ import Booklist from './Booklist';
 const Books = () => (
   <div className="booksContainer">
     <Booklist />
-    <h2>ADD NEW BOOK</h2>
     <Bookinput />
   </div>
 );

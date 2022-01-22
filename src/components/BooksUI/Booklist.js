@@ -18,6 +18,7 @@ const Booklist = (() => {
           key={data.id}
           title={data.title}
           idx={data.id}
+          category={data.category}
         />
       ))}
     </ul>

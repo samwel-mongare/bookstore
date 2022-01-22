@@ -11,7 +11,7 @@ function App() {
   };
 
   return (
-    <>
+    <div className="bookStore">
       <Provider store={store}>
         <Navbar />
         <Routes>
@@ -31,7 +31,7 @@ function App() {
           />
         </Routes>
       </Provider>
-    </>
+    </div>
   );
 }
 

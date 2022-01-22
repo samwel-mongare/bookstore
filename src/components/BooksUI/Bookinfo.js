@@ -10,14 +10,12 @@ const Bookinfo = ((props) => {
   };
 
   return (
-    <li
-      style={{
-        display: 'flex', justifyContent: 'space-between', width: '60vw', alignSelf: 'center',
-      }}
-    >
-      <p style={{ margin: '0' }}>{data.title}</p>
+    <li className="book-container">
+      <p className="cat">{data.category}</p>
+      <p className="titleData">{data.title}</p>
+      <p className="author">Ryan Renolds</p>
       <button
-        className="button"
+        className="remove"
         type="button"
         onClick={deleteBookFromStore}
         id={data.idx}
