@@ -47,7 +47,7 @@ a {
   display: flex;
   flex-direction: row;
   width: 60vw;
-  height: 13vh;
+  height: 15vh;
   margin: 1.313rem 3.25rem 0;
   padding: 0.8rem 9.188rem 1.625rem 1.688rem;
   padding-bottom: 2rem;
@@ -58,7 +58,7 @@ a {
 
 .inputForm {
   width: 70vw;
-  height: 7vh;
+  height: 2.813rem;
   margin: 1.313rem 4.85rem 0;
   padding: 0 9.188rem 1.625rem 1.688rem;
   padding-bottom: 2rem;
@@ -82,7 +82,7 @@ a {
 
 .Lesson-Pane2 {
   width: 15.813rem;
-  height: 1.813rem;
+  height: 2.813rem;
   border-radius: 4px;
   border: solid 1px var(--white-two);
   background-color: #fff;
@@ -105,16 +105,16 @@ a {
 }
 
 .submit {
-  width: 10.5rem;
-  height: 1.813rem;
+  width: 11.5rem;
+  height: 2.813rem;
   border-radius: 3px;
   background-color: #0290ff;
+  color: white;
 }
 
 .remove {
   width: 3.375rem;
   height: 1.188rem;
-  margin: 0.188rem 0.938rem 0.125rem 0;
   font-family: 'RobotoSlab', sans-serif;
   font-size: 0.875rem;
   font-weight: 300;
@@ -125,13 +125,17 @@ a {
   color: #4386bf;
   border: none;
   cursor: pointer;
-  border-right: 1px black solid;
+  border-right: solid 1px #121212;
   background-color: white;
 }
 
 .comment {
   margin-left: 0;
   width: 4.5rem;
+}
+
+.edit {
+  width: 2.3rem;
 }
 
 .author {
@@ -204,8 +208,8 @@ a {
 }
 
 .user {
-  color: blue;
-  font-size: 2rem;
+  color: #0290ff;
+  font-size: 1.5rem;
   padding-bottom: 1rem;
 }
 
@@ -252,6 +256,7 @@ a {
 .updateOne {
   display: flex;
   flex-direction: column;
+  margin-left: 4rem;
 }
 
 .heading2 {
@@ -274,7 +279,7 @@ a {
 }
 
 .updatedProgress {
-  width: 150px;
+  width: 11rem;
   background-color: #0290ff;
   color: #fff;
   border: none;
@@ -290,4 +295,12 @@ a {
   justify-content: space-between;
   width: 30rem;
   padding-top: 1rem;
+}
+
+.circle {
+  width: 2.813rem;
+  height: 2.813rem;
+  margin: 0 0 0 41.5rem;
+  padding: 0.875rem;
+  border: solid 1px var(--white-two);
 }

@@ -17,7 +17,7 @@ const Navbar = () => {
 
   return (
     <nav className="navBar">
-      <h1 className="header">BOOKSTORE CMS</h1>
+      <h1 className="header">Bookstore CMS</h1>
       <ul className="links">
         {links.map((link) => (
           <li key={link.id}>

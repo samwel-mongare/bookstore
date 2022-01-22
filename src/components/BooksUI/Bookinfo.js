@@ -26,7 +26,7 @@ const Bookinfo = ((props) => {
         >
           Delete
         </button>
-        <button className="remove" type="button">Edit</button>
+        <button className="remove edit" type="button">Edit</button>
       </div>
       <div className="extra-prop">
         <div className="progressAnalysis">
