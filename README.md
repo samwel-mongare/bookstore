@@ -8,10 +8,6 @@
 
 Additional description about the project and its features.
 
-## Live Demo
-
-[Live Demo not available yet]()
-
 ## Built With
 
 - HTML
